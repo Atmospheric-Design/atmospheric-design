@@ -2,9 +2,6 @@ body {
     margin: 0;
     padding: 0;
 }
-
-@media only screen and (min-width: 1340px) {
-
     /* Document setup */
     .container {
         width: 1040px;
@@ -51,11 +48,13 @@ body {
     .container .top-left-image .big-horizontal {
         left: 0;
         top: 0;
+        z-index: 2;
     }
 
     .container .top-left-image .small-vertical {
         left: 309px;
         top: -70px;
+        z-index: 4;
     }
 
     /* Top Right Block */
@@ -140,7 +139,7 @@ body {
     .small-horizontal {
         width: 182px;
         height: 136px;
-        z-index: 3;
+        z-index: 6;
         position: absolute;
         border: 3px solid white;
     }
@@ -164,7 +163,7 @@ body {
     .big-vertical {
         width: 300px;
         height: 400px;
-        z-index: 2;
+        z-index: 4;
         position: absolute;
         border: 3px solid white;
     }
@@ -215,7 +214,78 @@ body {
         height: 0px;
     }
 
-}
+    .overlay {
+        position: absolute;
+        transition: .5s ease;
+        opacity: 0;
+        z-index: 9;
+        margin-left: 3px;
+        margin-top: 3px;
+    }
+
+    .top-left-image > .overlay {
+        background-color: #6f2691;
+        width: 400px;
+        height: 300px;
+        z-index: 3;
+        
+    }
+
+    .top-right-image > .overlay {
+        background-color: #1c1370;
+        width: 400px;
+        height: 300px;
+        z-index: 3;
+        
+    }
+
+    .bottom-left-image > .overlay {
+        background-color: #6e0e0e;
+        width: 300px;
+        height: 400px;
+        z-index: 5;
+        
+    }
+
+    .bottom-right-image > .overlay {
+        background-color: #81830b;
+        width: 400px;
+        height: 300px;
+        z-index: 3;
+        
+    }
+
+    .top-left-image > .overlay:after {
+        color: white;
+        content: "Interior Design";
+        font-size: 32px;
+        margin-left: 90px;
+        line-height: 290px;
+    }
+
+    .top-right-image > .overlay:after {
+        color: white;
+        content: "Furniture Design";
+        font-size: 32px;
+        margin-left: 80px;
+        line-height: 180px;
+    }
+
+    .bottom-left-image > .overlay:after {
+        color: white;
+        content: "Exhibition Design";
+        font-size: 32px;
+        margin-left: 24px;
+        line-height: 660px;
+    }
+
+    .bottom-right-image > .overlay:after {
+        color: white;
+        content: "Experimentation";
+        font-size: 32px;
+        margin-left: 80px;
+        line-height: 150px;
+    }
 
 @media only screen and (max-width: 1339px) {
 
@@ -243,7 +313,6 @@ body {
         top: 80px;
         left: 50%;
         margin-left: -325px;
-        z-index: 1;
     }
 
     /* Top Left Block */
@@ -354,7 +423,6 @@ body {
     .small-horizontal {
         width: 127px;
         height: auto;
-        z-index: 3;
         position: absolute;
         border: 3px solid white;
     }
@@ -362,7 +430,6 @@ body {
     .small-vertical {
         width: 95px;
         height: auto;
-        z-index: 3;
         position: absolute;
         border: 3px solid white;
     }
@@ -370,7 +437,6 @@ body {
     .big-horizontal {
         width: 280px;
         height: auto;
-        z-index: 2;
         position: absolute;
         border: 3px solid white;
     }
@@ -378,7 +444,6 @@ body {
     .big-vertical {
         width: 210px;
         height: auto;
-        z-index: 2;
         position: absolute;
         border: 3px solid white;
     }
