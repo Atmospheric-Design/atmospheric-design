@@ -9,15 +9,15 @@ window.addEventListener("load", function() {
         element.addEventListener("mouseover", function() {
             let overlay = document.querySelectorAll(".overlay")[value];
             overlay.style.opacity = "0.9";
-            console.log("Hover on"+value);
-            
-            
+            let overlaySmall = document.querySelectorAll(".overlay-small")[value];
+            overlaySmall.style.opacity="1";
         })
     
         element.addEventListener("mouseout", function() {
             let overlay = document.querySelectorAll(".overlay")[value];
             overlay.style.opacity = "0";
-            console.log("Hover off"+value);
+            let overlaySmall = document.querySelectorAll(".overlay-small")[value];
+            overlaySmall.style.opacity="0";
 
             
         })};
