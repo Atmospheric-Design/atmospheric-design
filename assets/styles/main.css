@@ -4,12 +4,36 @@ body {
   font-family: "Muli", sans-serif;
 }
 
+h1 {
+  font-size: 32px;
+}
+
+h2 {
+  font-size: 26px;
+}
+
+h3 {
+  font-size: 22px;
+}
+
+p {
+  font-size: 16px;
+}
+
 a {
   color: black;
   text-decoration: none;
 }
 
-/* Document setup */
+nav {
+  visibility: hidden;
+  height: 0px;
+}
+
+.title {
+  visibility: hidden;
+  height: 0px;
+}
 
 aside {
   padding-left: 60px;
@@ -21,12 +45,10 @@ aside {
   height: 100vh;
   position: fixed;
   z-index: 999;
-  position: relative;
 }
 
-aside h1 {
-  visibility: hidden;
-  height: 0;
+aside .logo {
+  max-width: 80%;
 }
 
 aside ul {
@@ -35,7 +57,7 @@ aside ul {
 }
 
 aside ul li {
-  padding-top: 20px;
+  padding-top: 14px;
   font-size: 22px;
 }
 
@@ -49,7 +71,7 @@ aside a:hover {
 }
 
 aside .shop-new {
-  width: 370px;
+  width: 280px;
   height: auto;
   background: black;
   color: white;
@@ -101,91 +123,83 @@ aside .shop-new a.details {
 }
 
 .container {
-  width: calc(100vw - 350px);
-  float: right;
+  width: calc(100vw - 317px);
   box-sizing: border-box;
-  z-index: 0;
-  margin-right: 25px;
-  margin-top: 25px;
-}
-
-.home {
-  background: url(/images/line-drawing-backdrop-min.jpg) no-repeat fixed center;
-  background-size: cover;
-  height: calc(100vh - 25px);
-  position: relative;
-}
-
-.project-categories {
-  width: 80%;
-  left: 15%;
-  position: absolute;
-  bottom: 60px;
-  display: flex;
-}
-
-.project-categories .project {
-  border: black solid 1px;
-  width: 24%;
-  height: 550px;
-  padding: 15px;
-  background: white;
-  position: relative;
-  margin-right: 3%;
-}
-
-.project-categories .project img {
-  object-fit: cover;
-  width: 100%;
-  height: 85%;
-  border: solid black 1px;
-}
-
-.project-categories .project .arrow {
   float: right;
-  width: 22px;
-  height: auto;
-  margin-bottom: 15px;
-  visibility: hidden;
+  z-index: 0;
+  margin: 0;
 }
 
-.project-categories .project .arrow img {
-  border: none;
-}
+@media only screen and (max-width: 1360px) {
+  h1 {
+    font-size: 28px;
+  }
 
-.project-categories .project h2 {
-  margin-bottom: 0;
-  margin-top: 12px;
-  font-weight: 500;
-}
+  h2 {
+    font-size: 24px;
+  }
 
-.project-categories .project p {
-  margin-bottom: 0;
-  margin-top: 12px;
-}
+  h3 {
+    font-size: 20px;
+  }
 
-nav {
-  visibility: hidden;
-  height: 0px;
+  p {
+    font-size: 14px;
+  }
+
+  aside {
+    padding-left: 30px;
+    padding-top: 30px;
+    width: 200px;
+  }
+
+  aside ul li {
+    padding-top: 10px;
+    font-size: 18px;
+  }
+
+  aside .shop-new {
+    width: 220px;
+    height: auto;
+    bottom: 30px;
+  }
+  .container {
+    width: calc(100vw - 242px);
+  }
 }
 
 @media only screen and (max-width: 768px) {
-  /* Document setup */
-
-  .container {
-    width: 500px;
-    height: 100vh;
-    margin: 0 auto;
-    position: relative;
+  html,
+  body {
+    height: 100%;
+    background: url(/assets/images/line-drawing-backdrop-min.jpg) no-repeat
+      fixed center;
+    background-size: cover;
+    background-attachment: fixed;
   }
 
-  /* Navigation Bar */
+  h1 {
+    font-size: 26px;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+
+  h3 {
+    font-size: 18px;
+  }
+
+  p {
+    font-size: 14px;
+  }
 
   #menuToggle {
     display: block;
     position: relative;
-    top: 50px;
-    left: 50px;
+    width: 100%;
+    top: 20px;
+    left: 20px;
     z-index: 9;
     -webkit-user-select: none;
     user-select: none;
@@ -257,8 +271,9 @@ nav {
 
   #menu {
     position: absolute;
-    width: 110%;
-    margin: -100px 0 0 -50px;
+    top: -40px;
+    left: -30px;
+    width: 80%;
     padding: 50px;
     padding-top: 125px;
     padding-bottom: 75px;
@@ -284,6 +299,40 @@ nav {
 
   nav {
     visibility: visible;
-    height: 27px;
+    position: fixed;
+    z-index: 4;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background-color: white;
+    border-bottom: black solid 1px;
+  }
+
+  aside {
+    display: none;
+    width: 0;
+    height: 0;
+  }
+
+  .container {
+    width: 95vw;
+    float: none;
+    box-sizing: border-box;
+    z-index: 0;
+    margin: 0;
+  }
+
+  .title {
+    font-size: 22px;
+    display: block;
+    visibility: visible;
+    height: 30px;
+    position: fixed;
+    z-index: 9;
+    text-align: center;
+    left: 70px;
+    top: 0;
+    width: calc(100% - 70px);
   }
 }

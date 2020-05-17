@@ -1,0 +1,136 @@
+.category {
+  background: url(/assets/images/smarty-lobby.jpg) no-repeat fixed center;
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+}
+
+.category-header {
+  background: white;
+  border: black solid 1px;
+  width: calc(50% - 80px);
+  padding: 15px;
+  margin-right: 25px;
+  margin-bottom: 25px;
+}
+
+.category-header h1 {
+  padding: 0;
+  margin: 0;
+}
+
+.category-header h2 {
+  padding: 0;
+  margin: 0;
+}
+
+.category-header p {
+  padding: 0;
+  margin: 0;
+}
+
+.category-header .see-more {
+  padding-top: 12px;
+}
+
+.see-more:hover {
+  text-decoration: underline;
+}
+
+.see-more:hover::after {
+  content: url(/assets/images/arrow.svg);
+  margin-left: 15px;
+}
+
+.projects-flexbox {
+  box-sizing: border-box;
+  display: flex;
+  height: auto;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-content: flex-start;
+  padding-left: 120px;
+  padding-top: 25vw;
+}
+
+.empty {
+  width: calc(50% - 80px);
+  margin-bottom: 25px;
+  margin-right: 25px;
+  padding: 15px;
+}
+
+.project {
+  border: black solid 1px;
+  width: calc(50% - 80px);
+  height: 550px;
+  padding: 15px;
+  background: white;
+  position: relative;
+  margin-right: 25px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-bottom: 25px;
+}
+
+.project img {
+  object-fit: cover;
+  width: 100%;
+  height: calc(100% - 60px);
+  border: solid black 1px;
+}
+
+@media only screen and (max-width: 1360px) {
+  .projects-flexbox {
+    padding-left: 30px;
+  }
+  .project,
+  .empty,
+  .category-header {
+    margin-right: 15px;
+    margin-bottom: 15px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  html,
+  body {
+    height: 100%;
+    background: url(/assets/images/smarty-lobby.jpg) no-repeat fixed center;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+
+  .project,
+  .empty,
+  .category-header {
+    margin: 0;
+    margin-bottom: 30px;
+  }
+
+  .category {
+    width: 100%;
+  }
+
+  .projects-flexbox {
+    display: block;
+    margin: 0;
+    padding: 10px;
+  }
+
+  .empty {
+    display: none;
+    height: 0;
+    width: 0;
+  }
+
+  .category-header {
+    width: calc(100% - 30px);
+    margin-top: 40vh;
+  }
+
+  .project {
+    width: calc(100% - 30px);
+  }
+}
