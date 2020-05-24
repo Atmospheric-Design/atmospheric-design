@@ -8,11 +8,12 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Interiors | Atmospheric design</title>
+    <title>Projects | Atmospheric design</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="/assets/styles/main.css" />
     <link rel="stylesheet" href="/assets/styles/category.css" />
+    <link rel="stylesheet" href="/assets/styles/projects.css" />
     <link
       href="https://fonts.googleapis.com/css?family=Muli:200,400,700&display=swap"
       rel="stylesheet"
@@ -20,7 +21,8 @@
   </head>
   <body
     style="
-      background: url(/assets/images/smarty-lobby.jpg) no-repeat fixed center;
+      background: url(/assets/images/line-drawing-backdrop-min.jpg) no-repeat
+        fixed center;
       background-size: cover;
     "
   >
@@ -74,51 +76,85 @@
       <div class="projects-flexbox">
         <div class="empty"></div>
         <div class="category-header">
-          <h1>Interior design</h1>
-          <p>
-            Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot
-            courgette tatsoi pea sprouts fava bean collard greens dandelion okra
-            wakame tomato. Dandelion cucumber earthnut pea peanut soko zucchini.
-          </p>
-          <br />
-          <a href="/projects/interior/smarty-hotel-lobby.html"
-            ><h2>Featured project: SMARTY hotel lobby Koln</h2></a
-          >
-          <p>
-            Veggies es bonus vobis, proinde vos postulo essum magis kohlrabi
-            welsh onion daikon amaranth tatsoi tomatillo melon azuki bean garlic
-          </p>
-          <a href="/projects/interior/smarty-hotel-lobby.html"
-            ><p class="see-more">See more</p></a
-          >
+          <h1>Projects</h1>
+          <div id="myBtnContainer">
+            <button class="btn" onclick="filterSelection('interior')">
+              Interior design
+            </button>
+            <button class="btn" onclick="filterSelection('furniture')">
+              Furniture design
+            </button>
+            <button class="btn" onclick="filterSelection('exhibition')">
+              Exhibition design
+            </button>
+            <button class="btn" onclick="filterSelection('experiment')">
+              Experiments
+            </button>
+            <button class="all btn active" onclick="filterSelection('all')">
+              Show all
+            </button>
+          </div>
         </div>
-        <div class="project">
+        <div class="project interior">
           <a href="/projects/interior/project-name.html"
             ><img src="/assets/images/smarty-lobby.jpg" alt=""
           /></a>
           <a href="/projects/interior/project-name.html"
-            ><h2>Project headline</h2></a
+            ><h2>Interior Project headline</h2></a
           >
         </div>
-        <div class="project">
+        <div class="project interior">
           <a href="/projects/interior/project-name.html"
             ><img src="/assets/images/smarty-lobby.jpg" alt=""
           /></a>
           <a href="/projects/interior/project-name.html"
-            ><h2>Project headline</h2></a
+            ><h2>Interior Project headline</h2></a
           >
         </div>
-        <div class="project">
+        <div class="project furniture">
           <a href="/projects/interior/project-name.html"
             ><img src="/assets/images/smarty-lobby.jpg" alt=""
           /></a>
           <a href="/projects/interior/project-name.html"
-            ><h2>Project headline</h2></a
+            ><h2>Furniture Project headline</h2></a
+          >
+        </div>
+        <div class="project furniture">
+          <a href="/projects/interior/project-name.html"
+            ><img src="/assets/images/smarty-lobby.jpg" alt=""
+          /></a>
+          <a href="/projects/interior/project-name.html"
+            ><h2>Furniture Project headline</h2></a
+          >
+        </div>
+        <div class="project exhibition">
+          <a href="/projects/interior/project-name.html"
+            ><img src="/assets/images/smarty-lobby.jpg" alt=""
+          /></a>
+          <a href="/projects/interior/project-name.html"
+            ><h2>Exhibition Project headline</h2></a
+          >
+        </div>
+        <div class="project exhibition">
+          <a href="/projects/interior/project-name.html"
+            ><img src="/assets/images/smarty-lobby.jpg" alt=""
+          /></a>
+          <a href="/projects/interior/project-name.html"
+            ><h2>Exhibition Project headline</h2></a
+          >
+        </div>
+        <div class="project experiment">
+          <a href="/projects/interior/project-name.html"
+            ><img src="/assets/images/smarty-lobby.jpg" alt=""
+          /></a>
+          <a href="/projects/interior/project-name.html"
+            ><h2>Experiment Project headline</h2></a
           >
         </div>
         <div class="empty"></div>
       </div>
     </div>
     <script src="/main.js" async defer></script>
+    <script src="/projects/projects.js" async defer></script>
   </body>
 </html>

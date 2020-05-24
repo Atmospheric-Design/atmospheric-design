@@ -18,7 +18,13 @@
       rel="stylesheet"
     />
   </head>
-  <body>
+  <body
+    style="
+      background: url(/assets/images/line-drawing-backdrop-min.jpg) no-repeat
+        fixed center;
+      background-size: cover;
+    "
+  >
     <!--[if lt IE 7]>
       <p class="browsehappy">
         You are using an <strong>outdated</strong> browser. Please
@@ -58,9 +64,7 @@
       <div class="shop-new">
         <a href="#" class="close-button">X</a>
         <h2>New on the shop</h2>
-        <a href="#"
-          ><img src="./assets/images/instrument-table.jpg" alt=""
-        /></a>
+        <a class="image-link" href="#"><img alt="" /></a>
         <h3>#</h3>
         <a href="/" class="price"></a>
         <a href="/" class="details">View product details</a>
@@ -113,6 +117,6 @@
     </div>
 
     <script src="/home.js" async defer></script>
-    <script src="/shop-new.js" async defer></script>
+    <script src="/main.js" async defer></script>
   </body>
 </html>

@@ -1,6 +1,4 @@
 const projects = document.querySelectorAll(".project");
-const closeButton = document.querySelector(".close-button");
-const shopNew = document.querySelector(".shop-new");
 
 window.addEventListener("load", function () {
   function addHoverEffect(project) {
@@ -25,11 +23,4 @@ window.addEventListener("load", function () {
   addHoverEffect(projects[1]);
   addHoverEffect(projects[2]);
   addHoverEffect(projects[3]);
-
-  function shopNewCloseButton() {
-    closeButton.addEventListener("click", function () {
-      shopNew.style.visibility = "hidden";
-    });
-  }
-  shopNewCloseButton();
 });

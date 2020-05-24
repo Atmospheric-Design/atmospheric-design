@@ -1,5 +1,4 @@
 .category {
-  background: url(/assets/images/smarty-lobby.jpg) no-repeat fixed center;
   background-size: cover;
   height: 100vh;
   position: relative;
@@ -94,14 +93,6 @@
 }
 
 @media only screen and (max-width: 768px) {
-  html,
-  body {
-    height: 100%;
-    background: url(/assets/images/smarty-lobby.jpg) no-repeat fixed center;
-    background-size: cover;
-    background-attachment: fixed;
-  }
-
   .project,
   .empty,
   .category-header {

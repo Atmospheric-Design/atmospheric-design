@@ -2,6 +2,9 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Muli", sans-serif;
+  height: 100%;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 h1 {
@@ -45,6 +48,7 @@ aside {
   height: 100vh;
   position: fixed;
   z-index: 999;
+  background: white;
 }
 
 aside .logo {
@@ -169,15 +173,6 @@ aside .shop-new a.details {
 }
 
 @media only screen and (max-width: 768px) {
-  html,
-  body {
-    height: 100%;
-    background: url(/assets/images/line-drawing-backdrop-min.jpg) no-repeat
-      fixed center;
-    background-size: cover;
-    background-attachment: fixed;
-  }
-
   h1 {
     font-size: 26px;
   }

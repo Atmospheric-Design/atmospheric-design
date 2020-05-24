@@ -1,0 +1,48 @@
+.projects-flexbox {
+  padding-top: 10vw;
+}
+
+button {
+  font-size: 16px;
+  padding: 6px 14px;
+  background: white;
+  border: solid 1px black;
+  box-sizing: border-box;
+  cursor: pointer;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+
+#myBtnContainer {
+  position: relative;
+}
+
+button:hover {
+  outline: solid 1px black;
+}
+
+button.active {
+  background: black;
+  color: white;
+}
+
+.filters p {
+  margin-top: 24px;
+}
+
+.project {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.all.btn.active {
+  display: none;
+}
+
+.all {
+  border: none;
+  color: #666666;
+}
