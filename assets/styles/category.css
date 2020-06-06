@@ -1,5 +1,4 @@
 .category {
-  background-size: cover;
   height: 100vh;
   position: relative;
 }
@@ -16,11 +15,13 @@
 .category-header h1 {
   padding: 0;
   margin: 0;
+  padding-bottom: 6px;
 }
 
 .category-header h2 {
   padding: 0;
   margin: 0;
+  padding-bottom: 6px;
 }
 
 .category-header p {
