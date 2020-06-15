@@ -1,0 +1,37 @@
+.about {
+  background: url(/assets/images/amsterdam-line-drawing-light.jpg) no-repeat
+    fixed center;
+  background-size: cover;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+.about-flexbox {
+  box-sizing: border-box;
+  display: flex;
+  height: auto;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-content: flex-start;
+  margin-left: 5%;
+  padding-top: 5vw;
+  position: absolute;
+  bottom: 60px;
+}
+
+.about-header {
+  width: 40%;
+  background-color: white;
+  border: 1px solid black;
+  padding: 15px;
+  height: 300px;
+  margin-right: 25px;
+}
+
+.about-photo {
+  height: 600px;
+  width: 30%;
+  margin-right: 15%;
+}
