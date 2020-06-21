@@ -1,3 +1,7 @@
+.about-logo {
+  display: none;
+}
+
 .about {
   background: url(/assets/images/amsterdam-line-drawing-light.jpg) no-repeat
     fixed center;
@@ -34,4 +38,36 @@
   height: 600px;
   width: 30%;
   margin-right: 15%;
+}
+
+@media only screen and (max-width: 1360px) {
+  .about-flexbox {
+    bottom: 30px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .about-logo {
+    display: block;
+    position: absolute;
+    top: 120px;
+    left: calc(50% - 90px);
+    width: 179px;
+  }
+
+  .about-flexbox {
+    display: block;
+    margin: 0;
+    padding: 15px;
+    width: 100%;
+  }
+
+  .about-photo {
+    display: none;
+  }
+
+  .about-header {
+    margin: 0;
+    width: calc(100% - 32px);
+  }
 }

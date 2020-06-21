@@ -45,6 +45,10 @@
   margin-left: -120px;
 }
 
+.tall {
+  height: 900px;
+}
+
 .project-text {
   width: calc(50% - 80px);
   height: auto;
@@ -84,6 +88,10 @@
 
   .project-photo-wide {
     margin-bottom: 65px;
+  }
+
+  .tall {
+    height: 600px;
   }
 
   .project-text {
@@ -156,6 +164,7 @@
     box-sizing: border-box;
     margin-bottom: 65px;
     margin-top: 75vh;
+    margin-left: 0;
   }
 
   .project-text,
