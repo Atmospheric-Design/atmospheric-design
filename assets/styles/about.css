@@ -1,3 +1,11 @@
+p {
+  line-height: 22px;
+}
+
+h4 {
+  margin-bottom: 0;
+}
+
 .about-logo {
   display: none;
 }
@@ -38,6 +46,7 @@
   height: 600px;
   width: 30%;
   margin-right: 15%;
+  border: 1px solid black;
 }
 
 @media only screen and (max-width: 1360px) {
