@@ -1,4 +1,4 @@
-window.addEventListener("DOMContentLoaded", function () {
+window.addEventListener("DOMContentLoaded", function() {
   let shopLink = "/";
   let shopIMG = "/assets/images/instrument-table.jpg";
   let shopTitle = "Funky jazzy duotone table with atmospheric top and red legs";
