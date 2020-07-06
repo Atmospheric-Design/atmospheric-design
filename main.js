@@ -1,7 +1,7 @@
-window.addEventListener("DOMContentLoaded", function() {
+window.addEventListener("DOMContentLoaded", function () {
   let shopLink = "/";
   let shopIMG = "/assets/images/instrument-table.jpg";
-  let shopTitle = "Funky jazzy duotone table with atmospheric top and red legs";
+  let shopTitle = "Instrument table";
   let shopPrice = "€ 329";
   let shopNew = document.querySelector(".shop-new");
   shopNew.querySelector("img").src = shopIMG;
