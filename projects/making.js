@@ -12,7 +12,7 @@ window.addEventListener("DOMContentLoaded", function () {
 
   let expandContainer = function () {
     makingContainer.style.height = "auto";
-    makingContainer.style.maxHeight = "2000px";
+    makingContainer.style.maxHeight = "4000px";
     makingContainer.querySelector(".chevron").style.transform =
       "rotate(180deg)";
     makingContainer.querySelector("h1").innerHTML = "Click again to hide.";
