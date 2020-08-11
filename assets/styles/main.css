@@ -7,6 +7,14 @@ body {
   background-attachment: fixed;
 }
 
+a:focus {
+  outline: none;
+}
+
+button:focus {
+  outline: none;
+}
+
 h1 {
   font-size: 32px;
 }
