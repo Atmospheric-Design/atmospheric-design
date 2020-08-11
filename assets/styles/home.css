@@ -24,9 +24,6 @@
   background: white;
   position: relative;
   margin-right: 3%;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
 
 .project-categories .project img {
