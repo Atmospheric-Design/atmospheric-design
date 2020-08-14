@@ -19,25 +19,33 @@
 .project-categories .project {
   border: black solid 1px;
   width: 24%;
-  height: 550px;
   padding: 15px;
   background: white;
   position: relative;
   margin-right: 3%;
 }
 
-.project-categories .project img {
+.card-image img {
   object-fit: cover;
+  height: 28vw;
   width: 100%;
-  height: calc(100% - 60px);
   border: solid black 1px;
 }
 
+.card-text {
+  height: auto;
+}
+
+.card-text h2 {
+  width: calc(100% - 22px);
+}
+
 .project-categories .project .arrow {
-  float: right;
+  position: absolute;
+  bottom: 16px;
+  right: 15px;
   width: 22px;
   height: auto;
-  margin-bottom: 15px;
   visibility: hidden;
 }
 
@@ -48,7 +56,7 @@
 .project-categories .project h2 {
   font-size: 22px;
   margin-bottom: 0;
-  margin-top: 2px;
+  margin-top: 6px;
   font-weight: 500;
   white-space: nowrap;
   overflow: hidden;
@@ -61,13 +69,15 @@
 }
 
 @media only screen and (max-width: 1360px) {
+  .project-categories .project .arrow {
+    bottom: 8px;
+  }
   .project-categories {
     width: 85%;
-    left: 15%;
+    left: 8%;
     bottom: 30px;
   }
   .project-categories .project {
-    height: 450px;
     padding: 8px;
     margin-right: 2%;
   }
@@ -85,20 +95,33 @@
   .home {
     background: none;
   }
+
+  .project-categories .project .arrow {
+    display: none;
+  }
   .project-categories {
     width: 100%;
-    height: 1800px;
     left: -10px;
     display: block;
     top: 150px;
-    overflow: show;
   }
   .project-categories .project {
     width: 90%;
-    height: 350px;
     padding: 8px;
     margin-left: 5%;
     margin-right: 0;
     margin-bottom: 60px;
+  }
+
+  .card-image img {
+    height: 50vh;
+  }
+
+  .project-categories div:last-of-type {
+    margin-bottom: 10px;
+  }
+  .project-categories .project h2 {
+    font-size: 24px;
+    margin-top: 12px;
   }
 }
