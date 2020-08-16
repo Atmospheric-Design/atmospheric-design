@@ -73,13 +73,14 @@
     bottom: 8px;
   }
   .project-categories {
-    width: 85%;
-    left: 8%;
+    width: 91%;
+    left: 3%;
     bottom: 30px;
   }
   .project-categories .project {
     padding: 8px;
     margin-right: 2%;
+    min-width: 120px;
   }
   .project-categories .project h2 {
     font-size: 20px;

@@ -171,10 +171,19 @@ aside .shop-new a.details {
   }
 
   aside .shop-new {
-    width: 220px;
+    width: 180px;
     height: auto;
     bottom: 30px;
   }
+
+  aside .shop-new h2 {
+    font-size: 14px;
+  }
+
+  aside .shop-new a.details {
+    float: left;
+  }
+
   .container {
     width: calc(100vw - 242px);
   }

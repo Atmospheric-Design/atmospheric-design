@@ -27,6 +27,7 @@ h4 {
   flex-wrap: wrap;
   justify-content: flex-end;
   align-content: flex-start;
+  align-items: flex-start;
   margin-left: 5%;
   padding-top: 5vw;
   position: absolute;
@@ -38,7 +39,7 @@ h4 {
   background-color: white;
   border: 1px solid black;
   padding: 15px;
-  height: 300px;
+  height: auto;
   margin-right: 25px;
 }
 
@@ -69,6 +70,7 @@ h4 {
     margin: 0;
     padding: 15px;
     width: 100%;
+    bottom: 0;
   }
 
   .about-photo {
