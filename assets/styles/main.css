@@ -135,7 +135,7 @@ aside .shop-new a.details {
 }
 
 .container {
-  width: calc(100vw - 317px);
+  width: calc(100vw - 300px);
   box-sizing: border-box;
   float: right;
   z-index: 0;
@@ -185,7 +185,7 @@ aside .shop-new a.details {
   }
 
   .container {
-    width: calc(100vw - 242px);
+    width: calc(100vw - 200px);
   }
 }
 
