@@ -125,6 +125,8 @@ aside .shop-new h3 {
 
 aside .shop-new a.price {
   font-size: 22px;
+  float: left;
+  margin-right: 12px;
 }
 
 aside .shop-new a.details {
