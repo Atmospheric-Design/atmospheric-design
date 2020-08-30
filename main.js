@@ -18,7 +18,7 @@ window.addEventListener("load", function () {
       let shopLink =
         "https://www.etsy.com/listing/860344897/minimal-macrame-shelf";
       let shopIMG =
-        "/assets/images/furniture/minimal-macrame-shelf/minimal-macrame-shelf-full-view.jpg";
+        "/assets/images/furniture/minimal-macrame-shelf/minimal-macrame-shelf-square.jpg";
       let shopTitle = "Minimal macrame shelf";
       let shopPrice = "€ 99";
       shopNew.querySelector("img").src = shopIMG;
