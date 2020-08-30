@@ -28,7 +28,7 @@ window.addEventListener("load", function () {
     closeButton.addEventListener("click", function () {
       shopNew.style.visibility = "hidden";
       document.cookie =
-        "adPreference = hidden; expires = 30 Apr 2021 12:00:00 UTC;";
+        "adPreference = hidden; path=/; expires = 30 Apr 2021 12:00:00 UTC;";
     });
   }
   shopNewCloseButton();
