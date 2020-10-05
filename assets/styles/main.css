@@ -348,5 +348,6 @@ aside .shop-new a.details {
     left: 70px;
     top: 0;
     width: calc(100% - 70px);
+    padding-top: 14px;
   }
 }
