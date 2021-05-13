@@ -1,43 +1,60 @@
 .home {
-  background: url(/assets/images/home-page-line-drawing.jpg) no-repeat fixed
-    center;
-  background-size: cover;
   height: 100vh;
-  margin: 0;
-  padding: 0;
-  position: relative;
 }
 
 .project-categories {
-  width: 85%;
-  left: 10%;
-  position: absolute;
-  bottom: 60px;
+  width: calc(100% - 32px);
+  height: calc(100% - 32px);
+  margin: 16px;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .project-categories .project {
+  box-sizing: border-box;
   border: black solid 1px;
-  width: 24%;
-  padding: 15px;
+  width: calc(50% - 8px);
+  height: calc(50% - 8px);
   background: white;
+  margin-bottom: 16px;
+  overflow: hidden;
   position: relative;
-  margin-right: 3%;
+}
+
+.card-image {
+  width: 100%;
+  height: calc(100% - 60px);
 }
 
 .card-image img {
   object-fit: cover;
-  height: 28vw;
   width: 100%;
-  border: solid black 1px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .card-text {
-  height: auto;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(16px);
+  position: absolute;
+  bottom: 0;
+  border-top: black solid 1px;
+  box-sizing: border-box;
 }
 
 .card-text h2 {
   width: calc(100% - 22px);
+  margin: 0;
+  padding: 16px;
+  font-size: 22px;
+  font-weight: 500;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .project-categories .project .arrow {
@@ -53,76 +70,25 @@
   border: none;
 }
 
-.project-categories .project h2 {
-  font-size: 22px;
-  margin-bottom: 0;
-  margin-top: 6px;
-  font-weight: 500;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
 .project-categories .project p {
   margin-bottom: 0;
-  margin-top: 6px;
-}
-
-@media only screen and (max-width: 1360px) {
-  .project-categories .project .arrow {
-    bottom: 8px;
-  }
-  .project-categories {
-    width: 91%;
-    left: 5%;
-    bottom: 30px;
-  }
-  .project-categories .project {
-    padding: 8px;
-    margin-right: 2%;
-    min-width: 120px;
-  }
-  .project-categories .project h2 {
-    font-size: 20px;
-    margin-top: 2px;
-  }
-  .project-categories .project p {
-    font-size: 14px;
-    margin-top: 6px;
-  }
 }
 
 @media only screen and (max-width: 768px) {
-  .home {
-    background: none;
+
+  .project-categories {
+    margin-top: 84px;
+    justify-content: center;
+    padding-bottom: 1000px;
   }
 
   .project-categories .project .arrow {
     display: none;
   }
-  .project-categories {
-    width: 100%;
-    left: -10px;
-    display: block;
-    top: 150px;
-  }
+
   .project-categories .project {
-    width: 90%;
-    padding: 8px;
-    margin-left: 5%;
-    margin-right: 0;
-    margin-bottom: 60px;
+    width: calc(100% - 16px);
+    margin-bottom: 28px;
   }
 
-  .card-image img {
-    height: 50vh;
-  }
-
-  .project-categories div:last-of-type {
-    margin-bottom: 10px;
-  }
-  .project-categories .project h2 {
-    font-size: 24px;
-    margin-top: 12px;
-  }
 }

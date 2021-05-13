@@ -3,8 +3,6 @@ body {
   padding: 0;
   font-family: "Muli", sans-serif;
   height: 100%;
-  background-size: cover;
-  background-attachment: fixed;
 }
 
 a:focus {
@@ -83,7 +81,7 @@ aside a:hover {
 }
 
 aside .shop-new {
-  width: 280px;
+  width: 156px;
   height: auto;
   background: black;
   color: white;
@@ -106,8 +104,8 @@ aside .shop-new a.close-button {
 }
 
 aside .shop-new h2 {
-  font-size: 22px;
-  line-height: 22px;
+  font-size: 16px;
+  line-height: 16px;
   padding-bottom: 10px;
   margin-bottom: 0px;
   margin-top: 0px;
@@ -137,7 +135,7 @@ aside .shop-new a.details {
 }
 
 .container {
-  width: calc(100vw - 300px);
+  width: calc(100% - 300px);
   box-sizing: border-box;
   float: right;
   z-index: 0;
@@ -173,7 +171,7 @@ aside .shop-new a.details {
   }
 
   aside .shop-new {
-    width: 180px;
+    width: 116px;
     height: auto;
     bottom: 30px;
   }
